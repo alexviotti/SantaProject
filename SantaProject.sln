@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject", "SantaProject\SantaProject.csproj", "{44CF404D-329C-4EA6-B6F6-A0FE44632BD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject.Classes", "Classes\SantaProject.Classes.csproj", "{C3C75D71-65CE-4997-9ED2-08B9D44156AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject.Test", "Test\SantaProject.Test.csproj", "{85075913-E108-4522-90EE-0AA70105133D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{44CF404D-329C-4EA6-B6F6-A0FE44632BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44CF404D-329C-4EA6-B6F6-A0FE44632BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44CF404D-329C-4EA6-B6F6-A0FE44632BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C75D71-65CE-4997-9ED2-08B9D44156AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C75D71-65CE-4997-9ED2-08B9D44156AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C75D71-65CE-4997-9ED2-08B9D44156AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C75D71-65CE-4997-9ED2-08B9D44156AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85075913-E108-4522-90EE-0AA70105133D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85075913-E108-4522-90EE-0AA70105133D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85075913-E108-4522-90EE-0AA70105133D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85075913-E108-4522-90EE-0AA70105133D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

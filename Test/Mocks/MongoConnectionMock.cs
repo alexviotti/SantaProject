@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test.Mocks
+namespace SantaProject.Test.Mocks
 {
-    class MongoConnectionMock
+    public class MongoConnectionMock
     {
         public string DBName { get; set; }
         public IMongoDatabase GetDatabase()
