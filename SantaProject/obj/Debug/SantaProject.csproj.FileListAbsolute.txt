@@ -99,3 +99,13 @@
 \\studenti.local\share\userfolder\a.viotti\documents\visual studio 2015\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.csprojResolveAssemblyReference.cache
 \\studenti.local\share\userfolder\a.viotti\documents\visual studio 2015\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.dll
 \\studenti.local\share\userfolder\a.viotti\documents\visual studio 2015\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.pdb
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\Classes.dll
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Driver.dll
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Bson.dll
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Driver.Core.dll
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\Classes.pdb
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Driver.xml
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Bson.xml
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Driver.Core.xml
+\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.csproj.CoreCompileInputs.cache

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using SavingsMongoDB = SantaProject.Classes.MongoDB;
+using ProjectMongoDB = SantaProject.Classes.MongoDB;
 
 namespace SantaProject.Controllers
 {
@@ -17,7 +17,7 @@ namespace SantaProject.Controllers
         [HttpPost]
         public ActionResult Login(User user)
         {
-            SavingsMongoDB db = new SavingsMongoDB();
+            ProjectMongoDB db = new ProjectMongoDB();
             var usr = db.GetUser(user);
             if (usr != null)
             {

@@ -1,0 +1,19 @@
+﻿@model SantaProject.Models.Orders
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-xs-8">
+        <h2 style="text-align:center;">Orders</h2>
+    </div>
+</div>
+@foreach (var order in Model.EntityList)
+{
+    <hr />
+            <div class="row">
+                <div class="col-xs-8"><h4>@Html.ActionLink(order.Kid.ToString(), "Details", new { id = order.ID })</h4></div>
+                <div class="col-xs-2">@Html.ActionLink(" Edit", "Edit", new { id = order.ID }, new { @class = "btn btn-default glyphicon glyphicon-pencil" })</div>
+            </div>
+}
+
