@@ -32,5 +32,15 @@ namespace SantaProject.Controllers
             model.requestDate = order.requestDate;
             return View(model);
         }
+
+        public ActionResult Edit(string id)
+        {
+            ProjectMongoDB db = new ProjectMongoDB();
+            var order = db.GetOrder(id);
+            Order model = new Order();
+            model.Status = order.Status;
+            model.ID = order.ID;
+            return View(model);
+        }
     }
 }
