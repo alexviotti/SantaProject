@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using Classes;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace SantaProject.Classes
         public string Kid { get; set; }
 
         [BsonElement("status")]
-        public int Status { get; set; }
+        public OrderStatus Status { get; set; }
 
         [BsonElement("toys")]
         public List<Toy> Toys { get; set; }

@@ -8,16 +8,8 @@ namespace SantaProject.Models
 {
     public class Toys
     {
-        public Toys()
-        {
-            EntityList = new List<Toy>();
-        }
-        public List<Toy> EntityList { get; private set; }
+        public List<Toy> EntityList { get; set; }
 
-        public void Sum()
-        {
-            EntityList.Sum(toy => toy.Cost);
-        }
     }
 
 }
