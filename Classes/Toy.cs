@@ -21,6 +21,6 @@ namespace SantaProject.Classes
         public decimal Cost { get; set; }
 
         [BsonElement("amount")]
-        public string Amount { get; set; }
+        public int Amount { get; set; }
     }
 }
