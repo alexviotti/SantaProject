@@ -21,7 +21,7 @@ namespace SantaProject.Classes
         public IEnumerable<Order> GetAllOrder()
         {
             IMongoCollection<Order> orderCollection = database.GetCollection<Order>("orders");
-            return orderCollection.Find(new BsonDocument()).ToList();
+            return orderCollection.Find(new BsonDocument()).SortBy(o => o.RequestDate).ToList();
         }
 
         public IEnumerable<Toy> GetAllOrderPrice(Order order)
@@ -56,12 +56,12 @@ namespace SantaProject.Classes
             return userCollection.Find(_ => _.Email == user.Email && _.PasswordClearText == user.PasswordClearText).FirstOrDefault();
         }
 
-        public bool UpdateOrder(Order order)
+        public bool UpdateOrder(string id, OrderStatus status)
         {
             IMongoCollection<Order> orderCollection = database.GetCollection<Order>("orders");
-            var filter = Builders<Order>.Filter.Eq("_id", ObjectId.Parse(order.ID));
+            var filter = Builders<Order>.Filter.Eq("_id", ObjectId.Parse(id));
             var update = Builders<Order>.Update
-                .Set("status", order.Status);
+                .Set("status", (int)status);
             try
             {
                 orderCollection.UpdateOne(filter, update);

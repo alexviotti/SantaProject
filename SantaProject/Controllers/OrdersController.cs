@@ -29,7 +29,7 @@ namespace SantaProject.Controllers
             model.Kid = order.Kid;
             model.Status = order.Status;
             model.Toys = order.Toys;
-            model.requestDate = order.requestDate;
+            model.RequestDate = order.RequestDate;
             return View(model);
         }
 
@@ -51,6 +51,14 @@ namespace SantaProject.Controllers
             Orders model = new Orders();
             model.EntityList = orders;
             return View(model);
+        }
+
+        public ActionResult Save(OrderStatus status, string id)
+        {
+            ProjectMongoDB db = new ProjectMongoDB();
+            bool result;
+            result = db.UpdateOrder(id, status);
+            return RedirectToAction("Index");//, new { result = result }
         }
     }
 }

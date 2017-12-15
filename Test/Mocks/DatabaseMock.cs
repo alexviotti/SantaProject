@@ -14,6 +14,11 @@ namespace SantaProject.Test.Mocks
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Toy> GetAllOrderPrice(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Toy> GetAllToy()
         {
             throw new NotImplementedException();

@@ -20,7 +20,6 @@ C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\bin\Deb
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\bin\Debug\MongoDB.Bson.xml
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\bin\Debug\MongoDB.Driver.xml
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\bin\Debug\MongoDB.Driver.Core.xml
-C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\obj\Debug\SantaProject.Classes.csprojResolveAssemblyReference.cache
-C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\obj\Debug\SantaProject.Classes.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\obj\Debug\Classes.dll
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\obj\Debug\Classes.pdb
+C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Classes\obj\Debug\SantaProject.Classes.csprojResolveAssemblyReference.cache

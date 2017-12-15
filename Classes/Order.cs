@@ -1,4 +1,4 @@
-﻿using Classes;
+﻿using SantaProject.Classes;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
@@ -25,7 +25,7 @@ namespace SantaProject.Classes
         public List<Toy> Toys { get; set; }
 
         [BsonElement("requestDate")]
-        public DateTime requestDate { get; set; }
+        public DateTime RequestDate { get; set; }
 
         public decimal? Price
         {

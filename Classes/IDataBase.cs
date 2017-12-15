@@ -8,7 +8,7 @@ namespace SantaProject.Classes
 {
     public interface IDataBase
     {
-        bool UpdateOrder(Order order);
+        bool UpdateOrder(string id, OrderStatus status);
         IEnumerable<Order> GetAllOrder();
         IEnumerable<Toy> GetAllToy();
         Order GetOrder(string id);
