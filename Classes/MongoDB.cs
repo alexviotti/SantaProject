@@ -24,6 +24,14 @@ namespace SantaProject.Classes
             return orderCollection.Find(new BsonDocument()).ToList();
         }
 
+        public IEnumerable<Toy> GetAllOrderPrice(Order order)
+        {
+            IMongoCollection<Toy> toysCollection = database.GetCollection<Toy>("toys");
+            return toysCollection.Find(new BsonDocument()).ToList()
+                                        .Where(toy => order.Toys.Any(orderToy => orderToy.Name == toy.Name))
+                                        .ToList();
+        }
+
         public IEnumerable<Toy> GetAllToy()
         {
             IMongoCollection<Toy> toyCollection = database.GetCollection<Toy>("toys");

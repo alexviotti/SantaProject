@@ -14,5 +14,6 @@ namespace SantaProject.Classes
         Order GetOrder(string id);
         Toy GetToy(string id);
         User GetUser(User user);
+        IEnumerable<Toy> GetAllOrderPrice(Order order);
     }
 }

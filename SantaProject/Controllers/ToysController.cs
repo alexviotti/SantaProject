@@ -1,4 +1,5 @@
-﻿using SantaProject.Models;
+﻿using SantaProject.Classes;
+using SantaProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

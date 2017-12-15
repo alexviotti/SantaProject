@@ -42,5 +42,15 @@ namespace SantaProject.Controllers
             model.ID = order.ID;
             return View(model);
         }
+
+        public ActionResult List()
+        {
+            ProjectMongoDB db = new ProjectMongoDB();
+            var orders = db.GetAllOrder().ToList();
+            orders.ForEach(order => order.Toys = db.GetAllOrderPrice(order) as List<Toy>);
+            Orders model = new Orders();
+            model.EntityList = orders;
+            return View(model);
+        }
     }
 }

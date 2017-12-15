@@ -9,5 +9,10 @@ namespace SantaProject.Models
     public class Orders
     {
         public List<Order> EntityList { get; set; }
+
+        /*public void Sum()
+        {
+            EntityList.Sum(toy => toy.Cost);
+        }*/
     }
 }

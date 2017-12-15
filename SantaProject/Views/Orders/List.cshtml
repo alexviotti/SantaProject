@@ -1,0 +1,26 @@
+﻿@model SantaProject.Models.Orders
+
+@{
+    ViewBag.Title = "Order Price";
+}
+
+<h2>Order Price</h2>
+
+<table class="table">
+    <tr>
+        <th>Kid</th>
+        <th>Price</th>
+    </tr>
+
+@foreach (var order in Model.EntityList) {
+    <tr>
+        <td>
+            @Html.DisplayName(order.Kid.ToString())
+        </td>
+        <td>
+            @Html.DisplayName(order.Price.ToString())
+        </td>
+    </tr>
+}
+
+</table>
