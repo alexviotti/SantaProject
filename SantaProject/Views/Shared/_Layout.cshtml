@@ -27,7 +27,17 @@
                     <li>@Html.ActionLink("Toys", "Index", "Toys")</li>
                     <li>@Html.ActionLink("Order Price", "List", "Orders")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <ul class="nav navbar-nav navbar-right">
+                    @if (Session["ID"] != null && Session["Email"] != null)
+                    {
+                        <li>@Html.ActionLink("Welcome " + Session["ScreenName"], "Index", "Home")</li>
+                        <li>@Html.ActionLink("Logout", "Logout", "Users")</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Accedi", "Login", "Users")</li>
+                    }
+                </ul>
             </div>
         </div>
     </div>

@@ -23,6 +23,11 @@ namespace SantaProject.Controllers
             {
                 Session["Email"] = usr.Email.ToString();
                 Session["ID"] = usr.ID.ToString();
+                Session["ScreenName"] = usr.ScreenName.ToString();
+                if (usr.IsAdmin)
+                {
+                    Session["IsAdmin"] = usr.IsAdmin.ToString();
+                }
                 return RedirectToAction($"../Home");
             }
             else
