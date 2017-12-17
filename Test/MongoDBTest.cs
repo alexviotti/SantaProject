@@ -41,9 +41,9 @@ namespace SantaProject.Test
         {
             Order test = new Order();
             Mock<IDataBase> mock = new Mock<IDataBase>();
-            mock.Setup(order => order.UpdateOrder(It.Is<Order>(obj => obj == null))).Throws<ArgumentNullException>();
+            mock.Setup(m => m.UpdateOrder(It.Is<string>(id => id == string.Empty), It.IsAny<OrderStatus>())).Throws<ArgumentNullException>();
 
-            mock.Object.UpdateOrder(test);
+            mock.Object.UpdateOrder("id",0);
         }
     }
 }

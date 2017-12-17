@@ -277,7 +277,6 @@
     <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\Orders\Details.cshtml" />
     <Content Include="Views\Toys\Index.cshtml" />
-    <Content Include="Views\Orders\List.cshtml" />
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Logout.cshtml" />

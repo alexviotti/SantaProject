@@ -159,3 +159,4 @@ C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Test\bin\Debug\
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Test\bin\Debug\it\System.Web.WebPages.Razor.resources.dll
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Test\bin\Debug\it\System.Web.WebPages.resources.dll
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Test\bin\Debug\it\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\Test\obj\Debug\SantaProject.Test.csproj.CoreCompileInputs.cache

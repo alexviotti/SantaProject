@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Applicazione ASP.NET</title>
+    <title>SantaProject</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -18,14 +18,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nome applicazione", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("SantaProject", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Orders", "Index", "Orders")</li>
-                    <li>@Html.ActionLink("Toys", "Index", "Toys")</li>
-                    <li>@Html.ActionLink("Order Price", "List", "Orders")</li>
+                    @if (Session["ID"] != null && Session["Email"] != null)
+                    {
+                        <li>@Html.ActionLink("Orders", "Index", "Orders")</li>
+                        <li>@Html.ActionLink("Warehouse", "Index", "Toys")</li>
+                    }
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Session["ID"] != null && Session["Email"] != null)
@@ -45,7 +47,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Applicazione ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - Alessandro Viotti</p>
         </footer>
     </div>
 

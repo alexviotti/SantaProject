@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject", "SantaProject\SantaProject.csproj", "{44CF404D-329C-4EA6-B6F6-A0FE44632BD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject.Classes", "Classes\SantaProject.Classes.csproj", "{C3C75D71-65CE-4997-9ED2-08B9D44156AB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject.Test", "Test\SantaProject.Test.csproj", "{85075913-E108-4522-90EE-0AA70105133D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SantaProject.Test.Integration", "SantaProject.Test.Integration\SantaProject.Test.Integration.csproj", "{D33647A2-F619-48BE-959A-5E5D253469AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{85075913-E108-4522-90EE-0AA70105133D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85075913-E108-4522-90EE-0AA70105133D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85075913-E108-4522-90EE-0AA70105133D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D33647A2-F619-48BE-959A-5E5D253469AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33647A2-F619-48BE-959A-5E5D253469AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33647A2-F619-48BE-959A-5E5D253469AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33647A2-F619-48BE-959A-5E5D253469AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E388833A-76D0-475E-BE7B-A80792557293}
 	EndGlobalSection
 EndGlobal

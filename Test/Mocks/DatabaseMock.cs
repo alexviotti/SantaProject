@@ -39,9 +39,10 @@ namespace SantaProject.Test.Mocks
             throw new NotImplementedException();
         }
 
-        public bool UpdateOrder(Order order)
+        public bool UpdateOrder(string id, OrderStatus status)
         {
             throw new NotImplementedException();
         }
+
     }
 }

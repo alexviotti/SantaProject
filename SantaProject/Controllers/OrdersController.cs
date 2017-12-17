@@ -14,9 +14,13 @@ namespace SantaProject.Controllers
         public ActionResult Index()
         {
             ProjectMongoDB db = new ProjectMongoDB();
-            var orders = db.GetAllOrder();
+            var orders = db.GetAllOrder().ToList();
+            if(Session["IsAdmin"] != null)
+            {
+                orders.ForEach(order => order.Toys = db.GetAllOrderPrice(order) as List<Toy>);
+            }
             Orders model = new Orders();
-            model.EntityList = orders.ToList();
+            model.EntityList = orders;
             return View(model);
         }
 
@@ -40,16 +44,6 @@ namespace SantaProject.Controllers
             Order model = new Order();
             model.Status = order.Status;
             model.ID = order.ID;
-            return View(model);
-        }
-
-        public ActionResult List()
-        {
-            ProjectMongoDB db = new ProjectMongoDB();
-            var orders = db.GetAllOrder().ToList();
-            orders.ForEach(order => order.Toys = db.GetAllOrderPrice(order) as List<Toy>);
-            Orders model = new Orders();
-            model.EntityList = orders;
             return View(model);
         }
 
