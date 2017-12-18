@@ -11,27 +11,35 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Kid)
+            <h4><strong>@Html.DisplayNameFor(model => model.Kid)</strong></h4>
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Kid)
+            <h4>@Html.DisplayFor(model => model.Kid)</h4>
+        </dd>
+        
+        <dt>
+            <h4><strong>@Html.DisplayNameFor(model => model.Status)</strong></h4>
+        </dt>
+
+        <dd>
+            <h4>@Html.DisplayFor(model => model.Status)</h4>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Status)
+            <h4><strong>@Html.DisplayNameFor(model => model.Toys)</strong></h4>
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Status)
+            <h4>@String.Join(", ", Model.Toys.Select(toy => toy.Name));</h4>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.RequestDate)
+            <h4><strong>@Html.DisplayNameFor(model => model.RequestDate)</strong></h4>
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.RequestDate)
+            <h4>@Html.DisplayFor(model => model.RequestDate)</h4>
         </dd>
 
     </dl>

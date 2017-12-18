@@ -21,7 +21,6 @@ C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Te
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Test.Integration\bin\Debug\MongoDB.Driver.xml
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Test.Integration\bin\Debug\MongoDB.Driver.Core.xml
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Test.Integration\obj\Debug\SantaProject.Test.Integration.csprojResolveAssemblyReference.cache
-C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Test.Integration\obj\Debug\SantaProject.Test.Integration.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Test.Integration\obj\Debug\SantaProject.Test.Integration.dll
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject.Test.Integration\obj\Debug\SantaProject.Test.Integration.pdb
 \\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject.Test.Integration\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll

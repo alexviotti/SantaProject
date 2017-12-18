@@ -218,4 +218,3 @@ C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\bi
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.dll
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.pdb
-C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.csproj.CoreCompileInputs.cache
