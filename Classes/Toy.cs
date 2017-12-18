@@ -17,9 +17,11 @@ namespace SantaProject.Classes
         [BsonElement("name")]
         public string Name { get; set; }
 
+        [BsonIgnoreIfNull]
         [BsonElement("cost")]
-        public decimal Cost { get; set; }
+        public decimal? Cost { get; set; }
 
+        [BsonIgnoreIfNull]
         [BsonElement("amount")]
         public int Amount { get; set; }
     }

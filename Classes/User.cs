@@ -30,7 +30,7 @@ namespace SantaProject.Classes
         [BsonElement("password_clear_text")]
         public string PasswordClearText { get; set; }
 
-        public string Hash(string input)
+        public static string Hash(string input)
         {
             byte[] HashValue, MessageBytes = Encoding.UTF8.GetBytes(input);
             SHA512Managed SHhash = new SHA512Managed();

@@ -14,22 +14,22 @@
 {
     <table class="table">
         <tr>
-            <th>Kid</th>
-            <th>Request Date</th>
-            <th>Price</th>
+            <th><h4>Kid</h4></th>
+            <th><h4>Request Date</h4></th>
+            <th><h4>Price</h4></th>
         </tr>
 
         @foreach (var order in Model.EntityList)
         {
         <tr>
             <td>
-                @Html.DisplayName(order.Kid.ToString())
+                <h4>@Html.DisplayName(order.Kid.ToString())</h4>
             </td>
             <td>
-                @Html.DisplayName(order.RequestDate.ToString())
+                <h4>@Html.DisplayName(order.RequestDate.ToString())</h4>
             </td>
             <td>
-                @Html.DisplayName(order.Price.ToString())
+                <h4>@Html.DisplayName(order.Price.ToString())</h4>
             </td>
         </tr>
         }
@@ -42,7 +42,7 @@ else
     {
         <hr />
         <div class="row">
-            <div class="col-xs-8"><h4>@Html.ActionLink(order.Kid.ToString(), "Details", new { id = order.ID })</h4></div>
+            <div class="col-xs-8"><h4>@Html.ActionLink(order.Kid.ToString(), "Details", new { id = order.ID }, new { @style = "color: black" })</h4></div>
             <div class="col-xs-2">@Html.ActionLink(" Edit", "Edit", new { id = order.ID }, new { @class = "btn btn-default glyphicon glyphicon-pencil" })</div>
         </div>
     }

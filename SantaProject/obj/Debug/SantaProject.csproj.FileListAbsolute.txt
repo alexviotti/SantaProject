@@ -108,7 +108,6 @@
 \\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Driver.xml
 \\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Bson.xml
 \\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\bin\MongoDB.Driver.Core.xml
-\\studenti.local\Share\UserFolder\a.viotti\Documents\Visual Studio 2015\Projects\SantaProject\SantaProject\obj\Debug\SantaProject.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\bin\ApplicationInsights.config
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\bin\roslyn\csc.exe
 C:\Users\Alex\Documents\Visual Studio 2017\Projects\SantaProject\SantaProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll

@@ -12,7 +12,7 @@ namespace SantaProject.Test.Integration
     public class Orders
     {
         private IMongoDatabase db;
-        private string testOrderId = ObjectId.GenerateNewId().ToString(); 
+        private string testId = ObjectId.GenerateNewId().ToString(); 
 
         [TestInitialize]
         public void Initialize()
@@ -23,7 +23,9 @@ namespace SantaProject.Test.Integration
             IMongoCollection<Order> collection = db.GetCollection<Order>("orders");
             collection.InsertOne(new Order
             {
-                ID = testOrderId
+                ID = testId,
+                Kid="pippo",
+                RequestDate = DateTime.Now                
             });
         }
 
@@ -48,7 +50,7 @@ namespace SantaProject.Test.Integration
         public void GetOrder_Should_Return_TestOrder()
         {
             var db = new ProjectMongoDB();
-            var order = db.GetOrder(testOrderId);
+            var order = db.GetOrder(testId);
             Assert.IsNotNull(order);
         }
 
@@ -56,7 +58,7 @@ namespace SantaProject.Test.Integration
         public void UpdateOrder_Should_Return_True()
         {
             var db = new ProjectMongoDB();
-            var order = db.GetOrder(testOrderId);
+            var order = db.GetOrder(testId);
             order.Status = OrderStatus.InProgress;
             Assert.IsTrue(db.UpdateOrder(order.ID, order.Status));
         }

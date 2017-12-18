@@ -31,7 +31,14 @@ namespace SantaProject.Classes
         {
             get
             {
-                return Toys.Sum(toy => toy.Cost);
+                if (this.Toys != null)
+                {
+                    return Toys.Sum(toy => toy.Cost);
+                }
+                else
+                {
+                    return null;
+                }
             }
             set { }
         }

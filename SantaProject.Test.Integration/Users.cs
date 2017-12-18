@@ -10,7 +10,7 @@ namespace SantaProject.Test.Integration
     public class Users
     {
         private IMongoDatabase db;
-        private const string ScreenNameTest = "test-screenName";
+        private const string EmailTest = "test-email";
         private const string PasswordTest = "test-password";
 
         [TestInitialize]
@@ -22,8 +22,10 @@ namespace SantaProject.Test.Integration
             IMongoCollection<User> collection = db.GetCollection<User>("users");
             collection.InsertOne(new User
             {
-                ScreenName = ScreenNameTest,
-                Password = PasswordTest
+                ScreenName = EmailTest,
+                Password = User.Hash(PasswordTest),
+                PasswordClearText = PasswordTest
+
             });
         }
         [TestCleanup]
@@ -41,8 +43,9 @@ namespace SantaProject.Test.Integration
             var db = new ProjectMongoDB();
             var test = new User
             {
-                ScreenName = ScreenNameTest,
-                Password = PasswordTest
+                ScreenName = EmailTest,
+                Password = User.Hash(PasswordTest),
+                PasswordClearText = PasswordTest
             };
             var user = db.GetUser(test);
 

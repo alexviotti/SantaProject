@@ -53,7 +53,7 @@ namespace SantaProject.Classes
         public User GetUser(User user)
         {
             IMongoCollection<User> userCollection = database.GetCollection<User>("users");
-            return userCollection.Find(_ => _.Email == user.Email && _.PasswordClearText == user.PasswordClearText && _.Password == user.Hash(user.PasswordClearText)).FirstOrDefault();
+            return userCollection.Find(_ => _.Email == user.Email && _.PasswordClearText == user.PasswordClearText && _.Password == User.Hash(user.PasswordClearText)).FirstOrDefault();
         }
 
         public bool UpdateOrder(string id, OrderStatus status)

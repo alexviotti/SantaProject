@@ -12,6 +12,7 @@ namespace SantaProject.Test.Integration
     public class Toys
     {
         private IMongoDatabase db;
+        string toyID = ObjectId.GenerateNewId().ToString();
 
         [TestInitialize]
         public void Initialize()
@@ -22,6 +23,7 @@ namespace SantaProject.Test.Integration
             IMongoCollection<Toy> collection = db.GetCollection<Toy>("toys");
             collection.InsertOne(new Toy
             {
+                ID = toyID,
                 Name = "toyTest"
             });
         }
@@ -47,8 +49,6 @@ namespace SantaProject.Test.Integration
         public void GetToy_Should_Return_TestToy()
         {
             var db = new ProjectMongoDB();
-
-            string toyID = ObjectId.GenerateNewId().ToString();
 
             var toy = db.GetToy(toyID);
 
